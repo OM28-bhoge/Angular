@@ -10,18 +10,18 @@ var Stud_Reult_Application = /** @class */ (function () {
         this.lastName = lastName;
         this.marks = marks;
     }
-    // Method to calculate total marks
+    // To calculate total marks
     Stud_Reult_Application.prototype.calculateTotal = function () {
         this.total = 0;
         for (var i = 0; i < this.marks.length; i++) {
             this.total += this.marks[i];
         }
     };
-    // Method to calculate percentage
+    // To calculate percentage
     Stud_Reult_Application.prototype.calculatePercentage = function () {
         this.percentage = (this.total / (this.marks.length * 100)) * 100;
     };
-    // Method to calculate grade
+    // To calculate grade
     Stud_Reult_Application.prototype.calculateGrade = function () {
         if (this.percentage >= 80) {
             this.grade = "A+";
@@ -42,7 +42,7 @@ var Stud_Reult_Application = /** @class */ (function () {
             this.grade = "F";
         }
     };
-    // Method to display details
+    // To display details
     Stud_Reult_Application.prototype.displayDetails = function () {
         console.log("Name:", this.firstName + " " + this.lastName);
         console.log("Marks:", this.marks);
