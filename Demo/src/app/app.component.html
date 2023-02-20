@@ -11,3 +11,23 @@
 <button (click)="GetYTChannel()">Click Me</button><br>
 <button (click)="GetValue()">Click Here</button><br>
 <button (click)="GetValuebyParam('Welcome to App')">Get Value by Parameter</button>
+
+<p></p>
+Name : <input type="text" (keyup)="GetValue1($any($event.target).value)">
+<p></p>
+<h1>{{strName}}</h1>
+
+<p></p>
+Value 1 : <input type="number" #num1  [value]="number1">
+<br>
+Value 2 : <input type="number" #num2  [value]="number2">
+<br>
+<button (click)="calc(num1.value,num2.value)">ADD</button>
+<h3>Addition is : {{sum}}</h3>
+<p></p>
+
+<!--INPUT HANDLING-->
+<input type="text (keyup) = EventHandling('keyup Event Handling')" name = "" id = "">
+<br>
+<button (click) = "EventHandling('Button Click Event Handling')">Click Here</button>
+<br><br>
