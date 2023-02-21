@@ -31,20 +31,20 @@ Value 2 : <input type="number" #num2  [value]="number2">
 <br>
 <button (click) = "EventHandling('Button Click Event Handling')">Click Here</button>
 <br><br>
-<input type = "text" (keyup) = "EventHandling1('Keyup Event Handling')" name = "" id = "">
+<input type = "text" (keyup) = "EventHandling('Keyup Event Handling')" name = "" id = "">
 <br><br>
-<input type = "text" #txt (keyup) = "EventHandling2(txt.value)">
+<input type = "text" #txt (keyup) = "EventHandling(txt.value)">
 <br><br>
-<input type = "text" #txt (keyup.enter) = "EventHandling3(txt.value)">
+<input type = "text" #txt (keyup.enter) = "EventHandling(txt.value)">
 <br><br>
-<input type = "text" #txt (keyup.space) = "EventHandling4(txt.value)">
+<input type = "text" #txt (keyup.space) = "EventHandling(txt.value)">
 <br><br>
-<input type = "text" #txt (blur) = "EventHandling5(txt.value)">
-<br><br>
-
-<button (click) = "EventHandling6('Button Click Evet Handling')">Click Here </button>
+<input type = "text" #txt (blur) = "EventHandling(txt.value)">
 <br><br>
 
-<span  (mouseover) = "EventHandling7('Mouse Over Handling')" style = "background-color: aqua;">This is a Span Element</span>
+<button (click) = "EventHandling('Button Click Evet Handling')">Click Here </button>
 <br><br>
-<span  (mouseleave) = "EventHandling8('Mouse Leave Handling')" style = "background-color:red">This is a Span Element</span>
+
+<span  (mouseover) = "EventHandling('Mouse Over Handling')" style = "background-color: aqua;">This is a Span Element</span>
+<br><br>
+<span  (mouseleave) = "EventHandling('Mouse Leave Handling')" style = "background-color:red">This is a Span Element</span>
