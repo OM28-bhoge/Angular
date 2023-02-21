@@ -31,3 +31,17 @@ Value 2 : <input type="number" #num2  [value]="number2">
 <br>
 <button (click) = "EventHandling('Button Click Event Handling')">Click Here</button>
 <br><br>
+<input type = "text" (keyup) = "EventHandling1('Keyup Event Handling')" name = "" id = "">
+<br><br>
+<input type = "text" #txt (keyup) = "EventHandling2(txt.value)">
+<br><br>
+<input type = "text" #txt (keyup.enter) = "EventHandling3(txt.value)">
+<br><br>
+<input type = "text" #txt (keyup.space) = "EventHandling4(txt.value)">
+<br><br>
+<input type = "text" #txt (blur) = "EventHandling5(txt.value)">
+<br><br>
+
+<button (click) = "EventHandling6('Button Click Evet Handling')">Click Here </button>
+<br><br>
+

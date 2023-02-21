@@ -64,4 +64,35 @@ export class AppComponent {
     alert(val);
     console.warn(val)
   }
+
+  EventHandling1(val:any)
+  {
+    alert(val);
+    console.warn(val)
+  }
+
+  EventHandling2(val:any)
+  {
+    alert(val);
+  }
+
+  EventHandling3(val:any)
+  {
+    alert(val);
+  }
+
+  EventHandling4(val:any)
+  {
+    alert(val);
+  }
+
+  EventHandling5(val:any)
+  {
+    alert(val);
+  }
+  
+  EventHandling6(val:any)
+  {
+    alert(val);
+  }
 }
