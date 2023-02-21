@@ -95,4 +95,9 @@ export class AppComponent {
   {
     alert(val);
   }
+
+  EventHandling7(val:any)
+  {
+    alert(val);
+  }
 }
