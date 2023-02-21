@@ -1,0 +1,50 @@
+<h1>Welcome to {{a1}}</h1>
+<h2>Welcome to MITWPU</h2>
+<h2>{{getData()}}</h2>
+<h2>{{getData1()}}</h2>
+<h3>Name:{{obj.name}}</h3>
+<h3>Age:{{obj.age}}</h3>
+<h3>Sum:{{a+b}}</h3>
+<h3>Addition:{{50+50}}</h3>
+<h3>Sub:{{a-b}}</h3>
+<h3>{{currentURL}}</h3>
+<button (click)="GetYTChannel()">Click Me</button><br>
+<button (click)="GetValue()">Click Here</button><br>
+<button (click)="GetValuebyParam('Welcome to App')">Get Value by Parameter</button>
+
+<p></p>
+Name : <input type="text" (keyup)="GetValue1($any($event.target).value)">
+<p></p>
+<h1>{{strName}}</h1>
+
+<p></p>
+Value 1 : <input type="number" #num1  [value]="number1">
+<br>
+Value 2 : <input type="number" #num2  [value]="number2">
+<br>
+<button (click)="calc(num1.value,num2.value)">ADD</button>
+<h3>Addition is : {{sum}}</h3>
+<p></p>
+
+<!--INPUT HANDLING-->
+<input type="text (keyup) = EventHandling('keyup Event Handling')" name = "" id = "">
+<br>
+<button (click) = "EventHandling('Button Click Event Handling')">Click Here</button>
+<br><br>
+<input type = "text" (keyup) = "EventHandling('Keyup Event Handling')" name = "" id = "">
+<br><br>
+<input type = "text" #txt (keyup) = "EventHandling(txt.value)">
+<br><br>
+<input type = "text" #txt (keyup.enter) = "EventHandling(txt.value)">
+<br><br>
+<input type = "text" #txt (keyup.space) = "EventHandling(txt.value)">
+<br><br>
+<input type = "text" #txt (blur) = "EventHandling(txt.value)">
+<br><br>
+
+<button (click) = "EventHandling('Button Click Evet Handling')">Click Here </button>
+<br><br>
+
+<span  (mouseover) = "EventHandling('Mouse Over Handling')" style = "background-color: aqua;">This is a Span Element</span>
+<br><br>
+<span  (mouseleave) = "EventHandling('Mouse Leave Handling')" style = "background-color:red">This is a Span Element</span>
