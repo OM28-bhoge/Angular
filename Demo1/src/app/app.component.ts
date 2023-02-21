@@ -64,4 +64,19 @@ export class AppComponent {
     alert(val);
     console.warn(val)
   }
+
+
+  //CLASS BINDING
+
+  success = "SUCCESS";
+  error = "ERROR";
+  underline = "UNDERLINE";
+  bold = "BOLD";
+  hasError = "false";
+  multiclass = ['success','underline','bold'];
+
+  conditionMultiClass = {
+    "success":!this.hasError,
+    "error":this.hasError
+  }
 }
